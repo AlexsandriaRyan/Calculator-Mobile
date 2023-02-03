@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="1,2,3"
+            android:stretchColumns="1,2,3"
+            android:background="#FFFFFF"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp"
+            android:padding="2dp"
+            android:gravity="fill">
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/row0"
+                android:background="#FFFFFF"
+                android:layout_weight="0.2">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/txtPreview"
+                    android:textColor="@color/dark_pink"
+                    android:layout_span="4"
+                    android:padding="10dp"
+                    android:gravity="bottom|center|end"
+                    android:layout_height="fill_parent"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:letterSpacing="0.05"
+                    android:background="@color/white" />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/row1"
+                android:background="#FFFFFF"
+                android:layout_weight="0.2">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txtDisplay"
+                    android:textColor="@color/gray_pink"
+                    android:layout_span="4"
+                    android:padding="10dp"
+                    android:gravity="bottom|center|end"
+                    android:layout_height="fill_parent"
+                    android:letterSpacing="0"
+                    android:background="@color/white"
+                    android:textSize="50sp"
+                    android:autoSizeMaxTextSize="50sp"
+                    android:autoSizeMinTextSize="30sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:autoSizeTextType="uniform"
+                     />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/row2"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:layout_weight="0.12"
+                android:layout_margin="0dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnC"
+                    android:background="@color/dark_pink"
+                    android:layout_margin="1dp"
+                    android:layout_span="2"
+                    android:textSize="18sp"
+                    android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/negPos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnNegPos"
+                    android:background="@color/dark_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/divide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnDiv"
+                    android:background="@color/dark_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/row3"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:layout_weight="0.12"
+                android:layout_margin="0dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btn7"
+                    android:background="@color/light_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btn8"
+                    android:background="@color/light_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btn9"
+                    android:background="@color/light_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/multiply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnMul"
+                    android:background="@color/dark_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    tools:ignore="TextContrastCheck"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/row4"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:layout_weight="0.12"
+                android:layout_margin="0dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btn4"
+                    android:background="@color/light_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btn5"
+                    android:background="@color/light_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btn6"
+                    android:background="@color/light_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnSub"
+                    android:background="@color/dark_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/row5"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:layout_weight="0.12"
+                android:layout_margin="0dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btn1"
+                    android:background="@color/light_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btn2"
+                    android:background="@color/light_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btn3"
+                    android:background="@color/light_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnAdd"
+                    android:background="@color/dark_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/row6"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:layout_weight="0.12"
+                android:layout_margin="1dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/decimal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnDec"
+                    android:background="@color/gray_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btn0"
+                    android:background="@color/light_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnDel"
+                    android:background="#918888"
+                    android:layout_margin="1dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:text="@string/equals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnEqu"
+                    android:background="@color/dark_pink"
+                    android:layout_margin="1dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_span="1" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
